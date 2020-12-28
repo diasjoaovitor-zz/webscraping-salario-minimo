@@ -6,7 +6,7 @@
 ## Rotas
 
 * **/**: retorna todos os dados desde 1994.
-* **/salary/2020-05**: retorna somente o salário vigente neste periodo.
+* **/2020-05**: retorna somente o salário vigente neste periodo.
 
 ## Tecnologias 
 * [Scrape-it](https://github.com/IonicaBizau/scrape-it#readme)

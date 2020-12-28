@@ -33,8 +33,6 @@ class Format {
     this.periods.forEach((period, index) => {
       data.push({ period, salary: this.salaries[index] })
     })
-
-    console.log(yearMonth)
     
     return yearMonth ? data.find(({ period }) => period === yearMonth) : data
   }
