@@ -1,7 +1,12 @@
 # Sobre
-<p>Essa api faz a captura dos dados nessa <a href="http://www.ipeadata.gov.br/exibeserie.aspx?stub=1&serid1739471028=1739471028">página</a>, rebendo todo o texto contido numa tabela</p>
-<p>A extração e a formatação dos dados requeridos foram feitos através de expressões regulares<p/>
-<p>A api tem apenas uma rota do tipo get ('/'), retornando um json com o ano.mês e o sálario referente. Seguindo o padrão da expressão regular, api conseguiu capturar os dados até setembro de 1994, sendo que o salário mínimo nesse periodo era de R$ 70,00</p>
+<p>Api que realiza um webscraping neste <a href="http://www.ipeadata.gov.br/exibeserie.aspx?stub=1&serid1739471028=1739471028">endereço</a>, buscando os valores do salário mínimo vigente em cada periodo. </p>
+<p>Os dados foram extraídos de uma tabela contida na página e a formatação foi feita através de uma expressão regular.</p>
+<p> Esta api tem duas rotas do tipo get, que retornam um json com o periodo ( ano-mês) e o salário mínimo vigente.</p>
+
+## Rotas
+
+* **/**: retorna todos os dados desde 1994.
+* **/salary/2020-05**: retorna somente o salário vigente neste periodo.
 
 ## Tecnologias 
 * [Scrape-it](https://github.com/IonicaBizau/scrape-it#readme)

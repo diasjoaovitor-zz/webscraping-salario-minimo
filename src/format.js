@@ -16,7 +16,7 @@ class Format {
   }
 
   getPeriods() {
-    const periods = this.string.map(string => string.slice(0, 7))
+    const periods = this.string.map(string => string.slice(0, 7).replace('.', '-'))
 
     return periods.reverse()
   }
@@ -27,14 +27,16 @@ class Format {
     return salaries.reverse()
   }
   
-  response() {
+  response(yearMonth) {
     const data = []
 
     this.periods.forEach((period, index) => {
       data.push({ period, salary: this.salaries[index] })
     })
+
+    console.log(yearMonth)
     
-    return data
+    return yearMonth ? data.find(({ period }) => period === yearMonth) : data
   }
 }
 
