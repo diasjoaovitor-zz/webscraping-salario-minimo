@@ -5,7 +5,7 @@
 
 ## Rotas
 
-* **/**: retorna todos os dados desde 1994.
+* **/**: retorna todos os dados desde setembro 1994.
 * **/2020-05**: retorna somente o salário vigente neste periodo.
 
 ## Tecnologias 
