@@ -6,6 +6,6 @@ const controller = new Controller()
 const routes = express.Router()
 
 routes.get('/', controller.index)
-routes.get('/:yearMonth', controller.show)
+routes.get('/show/:yearMonth', controller.show)
 
 export default routes

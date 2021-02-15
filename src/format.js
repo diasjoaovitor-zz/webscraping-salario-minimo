@@ -22,7 +22,11 @@ class Format {
   }
 
   getSalaries() {
-    const salaries = this.string.map(string => string.slice(-(string.length - 7)))
+    const salaries = this.string.map(string => {
+      const salary = string.slice(-(string.length - 7), -3)
+
+      return Number(salary.replace('.', ''))
+    })
 
     return salaries.reverse()
   }
